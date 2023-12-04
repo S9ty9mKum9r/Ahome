@@ -1,0 +1,18 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.Myimage{
+  position: fixed;
+  width: 100%; 
+    text-align: center;
+}
+img{
+  width: 100%; 
+    height: auto; 
+}
+.MyButtons{
+  position: relative; 
+  top: 20px; 
+  left: 50px; 
+}
