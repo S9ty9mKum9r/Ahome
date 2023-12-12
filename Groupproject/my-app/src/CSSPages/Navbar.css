@@ -1,6 +1,6 @@
 .Nav{
 
-    height: 70px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@ color: white;
 .Nav>div>button>img{
     
     width: 150px;
-    height:60px;
+    height:75px;
 
     border-radius: 10px;
 }
