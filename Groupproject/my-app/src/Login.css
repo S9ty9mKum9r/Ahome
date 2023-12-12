@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(61, 58, 58);
+}
+.dja{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.dcja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.b1{
+    border: 1px solid red;
+}
+.container{
+    width: 31vw; 
+    height: 65vh;
+    margin: 0 auto; 
+    background-color:white; 
+    box-sizing: border-box; 
+    border-radius: 20px;
+  }
+  .top{
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    height: 15%;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 17px;
+  }
+  .top button{
+    border: none;
+    background-color: white;
+  }
+  .mid{
+height: 70%;
+align-items: flex-start;
+justify-content: space-evenly;
+padding-left: 3vw;
+height: 49vh;
+  }
+  .mid input,.mid button{
+    height: 3vw;
+    width: 20vw;
+    border-radius: 10px;
+  }
+  .bottom{
+    height: 10%;
+    justify-content: flex-start;
+    padding-left: 3vw;
+    gap: 1vw;
+  }
+  #Contact{
+    width: 25vw;
+    font-size: 27px;
+  }
+  #SendBtn{
+    width: 25vw;
+    font-size: 20px;
+    background-color: rgb(240, 38, 38);
+    color: white;
+    cursor: pointer;
+  }
+  #Gmailc{
+    width: 25vw;
+    font-size: 20px;
+  }
+  #Submitbtn{
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+  }
+  #cross{
+    cursor: pointer;
+  }
+  #Account{
+    font-size: 20px;
+  }

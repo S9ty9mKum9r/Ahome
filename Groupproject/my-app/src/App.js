@@ -1,16 +1,14 @@
-import React from 'react';
-import './App.css';
-// import { BrowserRouter, Link } from 'react-router-dom';
-import Landing from './Landing';
+import React from 'react'
+// import Landing from './Landing'
+import LogInPage from './LogInPage'
+// import Rajistration from './Rajistration'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-      <main>
-        <Landing/>
-      </main>
+    <div>
+      {/* <Landi/ng/> */}
+      <LogInPage/>
+     {/* <Rajistration/> */}
     </div>
-  );
+  )
 }
-export default App;
+export default App

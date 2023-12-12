@@ -41,14 +41,3 @@ function Landing() {
   </>
 }
 export default Landing;
-{/* <div className="Myimage">
-        <div className='MyButtons'>
-        <button>Add Recipie</button>
-        <button>LogIn</button>
-        <button>SignUp</button>
-      </div>
-          <img
-            src="https://c4.wallpaperflare.com/wallpaper/869/719/717/cuisine-food-india-indian-wallpaper-preview.jpg"
-            alt="error"
-          />
-        </div> */}
