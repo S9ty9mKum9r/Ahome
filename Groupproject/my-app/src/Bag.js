@@ -15,14 +15,12 @@ const Bag = () => {
     const existingItemIndex = existingCartItems.findIndex((cartItem) => cartItem.id === item.id);
 
     if (existingItemIndex !== -1) {
-      // If the item already exists, update its quantity
+ 
       existingCartItems[existingItemIndex].quantity += 1;
     } else {
-      // If the item is not in the cart, add it with quantity 1
+   
       existingCartItems.push({ ...item, quantity: 1 });
     }
-
-    // Update the state and local storage with the new cart items
     setCartItems(existingCartItems);
     localStorage.setItem('cartItems', JSON.stringify(existingCartItems));
   }
@@ -74,7 +72,7 @@ const Bag = () => {
           
           <p>{item.discription}</p>
           <div id='bottom'>
-            <div>
+            <div id='quantity'>
             <button id='add' onClick={() => addToCart(item)}>+</button>
             <span id='price'>{item.quantity}</span>
             <button id='sub' onClick={() => removeFromCart(item)}>-</button>

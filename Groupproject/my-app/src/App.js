@@ -7,9 +7,9 @@ import React from 'react'
 // import MenuPage from './MenuPage';
 // import Homepage from './Homepage';
 
-// import MenuPage from './MenuPage';
+import MenuPage from './MenuPage';
 // import Homepage from './Homepage';
-import Bag from './Bag';
+// import Bag from './Bag';
 function App() {
   return (
     <div>
@@ -22,9 +22,9 @@ function App() {
      {/* <MenuPage/> */}
      {/* <Homepage/> */}
      {/* <MenuPage/> */}
-        <Bag/>
+        {/* <Bag/> */}
     {/* <Homepage/> */}
-     {/* <MenuPage/> */}
+     <MenuPage/>
     </div>
   )
 }
