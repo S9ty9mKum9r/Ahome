@@ -34,7 +34,6 @@ function BlogPage() {
       console.error('Error while parsing data from localStorage:', error);
     }
   }, []);
-
   return (
     <div className='BodyClass'>
       <div className='Bodyitems'>
@@ -63,21 +62,26 @@ function BlogPage() {
           </div>
           <p id='favouriteItem'>Your Favourite:</p>
           <div className='myfavouriteItem'>
-            <ul>
               {favourite.map((favourite, index) => (
                 <p key={index}>
+                  <div className='image'>
                 <img src={favourite.image} alt="" />
+                </div>
+                <div>
           <h3>{favourite.name}</h3>
+          </div>
+          <div>
           <h4>{favourite.price} ₹</h4>
+          </div>
+          <div>
           <p>{favourite.discription}</p>
+          </div>
                 </p>
               ))}
-            </ul>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
 export default BlogPage;
