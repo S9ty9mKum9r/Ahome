@@ -13,11 +13,12 @@ const MyComponent = () => {
       const response = await fetch(api);
       const realdata = await response.json();
       setData(realdata);
+      // console.log(realdata)
     } catch (error) {
       console.error(error);
     }
   };
-
+console.log(fetchData)
   useEffect(() => {
     fetchData();
   }, []);
