@@ -70,7 +70,7 @@ const Bag = () => {
           <img src={item.image} alt="" />
           
           <h2>{item.name}</h2>
-          <h3>{item.price} ₹</h3>
+       <div id='peicw'>   <h3>{item.price} ₹</h3></div>
           
           <p>{item.discription}</p>
           <div id='bottom'>
