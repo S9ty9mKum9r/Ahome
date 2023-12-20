@@ -5,9 +5,9 @@ import React from 'react'
 // import LogInPage from './LogInPage'
 // import Rajistration from './Rajistration'
 // import MenuPage from './MenuPage';
-import Homepage from './Homepage';
+// import Homepage from './Homepage';
 
-// import MenuPage from './MenuPage';
+import MenuPage from './MenuPage';
 // import Homepage from './Homepage';
 // import Bag from './Bag';
 function App() {
@@ -18,10 +18,10 @@ function App() {
       {/* <Landing/> */}
       {/* <LogInPage/> */}
      {/* <Rajistration/> */}
-     <Homepage/>
-     {/* <MenuPage/> */}
      {/* <Homepage/> */}
      {/* <MenuPage/> */}
+     {/* <Homepage/> */}
+     <MenuPage/>
         {/* <Bag/> */}
     {/* <Homepage/> */}
      {/* <MenuPage/> */}
