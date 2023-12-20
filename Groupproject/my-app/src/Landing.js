@@ -5,7 +5,6 @@ import Rajistration from './Rajistration';
 import {  BrowserRouter as Router, Routes, Route, Link  } from 'react-router-dom';
 function Landing() {
   return (
-    <Router>
       <Routes>
         <Route
           path="/"
@@ -16,7 +15,7 @@ function Landing() {
             <div className='burgerbardiv'></div>
             <div className='Mybtn'>
               <button>Add Recipe</button>
-              <button><Link to='/'>Login</Link></button>
+              <button><Link to='/loginPage'>Login</Link></button>
               <button><Link to='/signup'>SignUp</Link></button>
             </div>
           </div>
@@ -68,10 +67,9 @@ function Landing() {
         </>
           }
         />
-        <Route path="/" element={<LogInPage />} />
-        <Route path="/signup" element={<Rajistration />} />
+       
       </Routes>
-    </Router>
+    
   );
 }
 export default Landing;
