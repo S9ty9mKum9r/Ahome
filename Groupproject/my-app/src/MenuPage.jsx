@@ -223,4 +223,7 @@ function MenuPage() {
   );
 }
 // Export the MenuPage component as the default export
+
 export default MenuPage;
+
+
