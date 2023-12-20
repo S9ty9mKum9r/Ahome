@@ -1,6 +1,6 @@
 // Import necessary modules from the 'react' package
 import React, { useEffect, useState } from 'react';
-import "./CSSPages/MenuPage"
+import "./CSSPages/MenuPage.css"
 
 // Functional component MenuPage
 function MenuPage() {

@@ -3,7 +3,6 @@ import './LandingPage.css';
 import LogInPage from './LogInPage';
 import Rajistration from './Rajistration';
 import {  BrowserRouter as Router, Routes, Route, Link  } from 'react-router-dom';
-
 function Landing() {
   return (
     <Router>
@@ -17,7 +16,7 @@ function Landing() {
             <div className='burgerbardiv'></div>
             <div className='Mybtn'>
               <button>Add Recipe</button>
-              <button><Link to='/login'>Login</Link></button>
+              <button><Link to='/'>Login</Link></button>
               <button><Link to='/signup'>SignUp</Link></button>
             </div>
           </div>
@@ -66,11 +65,10 @@ function Landing() {
             {/* Add the rest of your buttons here */}
           </div>
         </div>
-       
         </>
           }
         />
-        <Route path="/login" element={<LogInPage />} />
+        <Route path="/" element={<LogInPage />} />
         <Route path="/signup" element={<Rajistration />} />
       </Routes>
     </Router>

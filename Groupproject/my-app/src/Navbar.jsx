@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import img from "./Images/b.jpg";
-
 function Navbar({ onSearch }) {
   const [searchInput, setSearchInput] = useState('');
 
@@ -17,9 +17,10 @@ function Navbar({ onSearch }) {
           <img src={img} alt="error" />
         </button>
         <div className="Menuside">
-          <button>Blog</button>
-          <button>Favorite</button>
-          <button>Menu</button>
+          <button><Link to='/BlogPage'>Blog</Link></button>
+          <button>
+            <Link to='/MenuPage'>Menu</Link>
+          </button>
         </div>
       </div>
       <div className="input">
@@ -31,9 +32,9 @@ function Navbar({ onSearch }) {
         />
       </div>
       <div className="logindiv">
- 
-        <button>Login</button>
+        <button><Link to='/'>LogIn</Link></button>
         <button>
+        <Link to='/Bag'>
           <svg
             stroke="currentColor"
             fill="currentColor"
@@ -45,10 +46,10 @@ function Navbar({ onSearch }) {
           >
             <path d="M1 4h14v10a2 2 0 01-2 2H3a2 2 0 01-2-2V4zm7-2.5A2.5 2.5 0 005.5 4h-1a3.5 3.5 0 117 0h-1A2.5 2.5 0 008 1.5z"></path>
           </svg>
+          </Link>
         </button>
       </div>
     </div>
   );
 }
-
 export default Navbar;
