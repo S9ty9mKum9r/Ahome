@@ -1,22 +1,23 @@
-import React from 'react'
-// import Bag from './Bag'
-import BlogPage from './BlogPage'
-// import Landing from './Landing'
-// import LogInPage from './LogInPage'
-// import Rajistration from './Rajistration'
-// import MenuPage from './MenuPage';
-// import Homepage from './Homepage';
-function App() {
+// Router.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LogInPage from './LogInPage';
+import Homepage from './Homepage';
+import MenuPage from './MenuPage';
+import BlogPage from './BlogPage';
+import Bag from './Bag';
+const App = () => {
   return (
-    <div>
-      {/* <Bag/> */}
-      <BlogPage/>
-      {/* <Landi/ng/> */}
-      {/* <LogInPage/> */}
-     {/* <Rajistration/> */}
-     {/* <Homepage/> */}
-     {/* <MenuPage/> */}
-    </div>
-  )
-}
-export default App
+    <Router>
+      <Routes>
+        <Route path="/" element={<LogInPage/>} />
+        <Route path="/home" element={<Homepage/>} />
+        <Route path='/MenuPage' element={<MenuPage/>} />
+        <Route path='/BlogPage' element={<BlogPage/>} />
+        <Route path='/Bag' element={<Bag/>}/>
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;
