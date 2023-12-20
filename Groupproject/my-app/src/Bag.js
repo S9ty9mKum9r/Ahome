@@ -59,10 +59,11 @@ const Bag = () => {
     <div>
       <Navbar/>
     </div>
+    
      <div className="cart-page">
    
-      <p>Total: {calculateTotal()} ₹</p>
-      <h2>Your Cart</h2>
+      
+      
       {cartItems.map((item) => (
         <div id='container' key={item.id}>
           <img src={item.image} alt="" />
@@ -77,13 +78,19 @@ const Bag = () => {
             <span id='price'>{item.quantity}</span>
             <button id='sub' onClick={() => removeFromCart(item)}>-</button>
             </div>
-           <div> <button id='remove' onClick={() => removeItem(item)}>Remove</button></div>
+           <div id='remove' > <button  onClick={() => removeItem(item)}>Remove</button></div>
           </div>
+
+
         </div>
+        
+
+        
       ))}
 
    
     </div>
+    <h1>Total:Bill {calculateTotal()} ₹</h1>
     <div>
         <Footer/>
       </div>
