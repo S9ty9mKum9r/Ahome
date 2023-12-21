@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./CSSPages/Bag.css"
 const Bag = () => {
   const [cartItems, setCartItems] = useState([]);
 

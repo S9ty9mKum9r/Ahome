@@ -1,9 +1,5 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: aquamarine;
-}
-.container{
+
+.cotainer{
 border: 2px solid red;
 width: 50vh;
 height: 60vh;
@@ -11,11 +7,11 @@ background-color: white;
 margin-top: 18vh;
 margin-left: 35vw;
 }
-.head{
+.hed{
     display: flex;
     justify-content: space-between;
 }
-.head>button{
+.hed>button{
     cursor: pointer;
     background-color: white;
     border: none;

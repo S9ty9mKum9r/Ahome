@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(61, 58, 58);
-}
+
 .dja{
     display: flex;
     justify-content: center;

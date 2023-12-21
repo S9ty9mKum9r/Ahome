@@ -1,6 +1,8 @@
 // Import necessary modules from the 'react' package
 import React, { useEffect, useState } from 'react';
 import "./CSSPages/MenuPage.css"
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 // Functional component MenuPage
 function MenuPage() {
@@ -144,6 +146,7 @@ function MenuPage() {
   // JSX rendering
   return (
     <div className='dishpage'>
+    <Navbar/>
       <div className='button'>
         {/* Buttons for sorting and filtering */}
         <button className='firstButton' onClick={Clicksix}>
@@ -220,6 +223,7 @@ function MenuPage() {
           ))}
         </ul>
       </div>
+      <Footer/>
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './BlogPage.css';
+import Footer from './Footer';
+import Navbar from './Navbar';
 
 function Comment(){
 // State for input value in the comment box
@@ -35,6 +37,7 @@ useEffect(() => {
 return (
 <>
 <div className='inputArea'>
+<Navbar />
  <div className='inputField'>
           <p> Comments </p>
           <div className='inputbox'>
@@ -145,6 +148,7 @@ const BlogPage = () => {
         </div>
       ))}
       </div>
+      <Footer/>
     </div>
   );
 };
