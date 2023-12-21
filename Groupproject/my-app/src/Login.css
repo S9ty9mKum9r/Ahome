@@ -17,18 +17,23 @@ body{
     justify-content: center;
     align-items: center;
 }
-.b1{
-    border: 1px solid red;
+#main{
+
+  
+  border: 2px solid green;
+  align-items: center;
 }
-.container{
-    width: 31vw; 
+
+#container{
+  border: 4px solid rgb(212, 189, 189);
+    width: 30%; 
     height: 65vh;
     margin: 0 auto; 
     background-color:white; 
     box-sizing: border-box; 
     border-radius: 20px;
   }
-  .top{
+  #top{
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     height: 15%;
@@ -40,27 +45,30 @@ body{
     border: none;
     background-color: white;
   }
-  .mid{
-height: 70%;
+  #mid{
+    border: 2px solid rgb(10, 19, 10);
+    width: 80%;
+    height:20%;
+
 align-items: flex-start;
 justify-content: space-evenly;
 padding-left: 3vw;
-height: 49vh;
   }
   .mid input,.mid button{
     height: 3vw;
     width: 20vw;
     border-radius: 10px;
   }
-  .bottom{
+  #bottom{
+    border: 20px solid blueviolet;
     height: 10%;
     justify-content: flex-start;
     padding-left: 3vw;
     gap: 1vw;
   }
   #Contact{
-    width: 25vw;
-    font-size: 27px;
+    width: 90%;
+    font-size: 17px;
   }
   #SendBtn{
     width: 25vw;
@@ -70,8 +78,8 @@ height: 49vh;
     cursor: pointer;
   }
   #Gmailc{
-    width: 25vw;
-    font-size: 20px;
+    width: 90%;
+    font-size: 17px;
   }
   #Submitbtn{
     font-size: 20px;
@@ -86,3 +94,4 @@ height: 49vh;
   #Account{
     font-size: 20px;
   }
+ 

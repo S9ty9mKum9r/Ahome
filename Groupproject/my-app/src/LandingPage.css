@@ -4,12 +4,25 @@
     margin-right: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .Landingpage-Navbar {
     height: 150px;
     display: flex;
     justify-content: space-between;
 }
+#Login{
+    color: white;
+    text-decoration: none;
+    margin-left: 60%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#SignUp{
+    color: white;
+    text-decoration: none;
+    margin-left: 60%;
+}
+
 .hadder {
     background-image: url('https://t4.ftcdn.net/jpg/02/84/46/89/360_F_284468940_1bg6BwgOfjCnE3W0wkMVMVqddJgtMynE.jpg');
     background-repeat: no-repeat;
@@ -65,6 +78,7 @@
 .futter {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
 }
 .futter>h1 {
     margin-bottom: 40px;
@@ -88,6 +102,7 @@
     font-size: 20px;
     width: 300px;
     height: 80px;
+    
     cursor: pointer;
     border-radius: 15px;
     /* font-size: 20px;
@@ -97,6 +112,12 @@ margin-bottom: 40px; */
 }
 .dja>button:hover {
     box-shadow: 0px 5px 5px 0px #042b34;
+}
+.dja>button>div{
+    color: black;
+}
+.dja>button>p{
+    color: black;
 }
 /* .futter>button>div{
     margin-top: 10px;

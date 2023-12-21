@@ -17,9 +17,9 @@ function Navbar({ onSearch }) {
           <img src={img} alt="error" />
         </button>
         <div className="Menuside">
-          <button><Link to='/BlogPage'>Blog</Link></button>
+          <button><Link id='Blog' to='/BlogPage'>Blog</Link></button>
           <button>
-            <Link to='/MenuPage'>Menu</Link>
+            <Link id='Menu' to='/MenuPage'>Menu</Link>
           </button>
         </div>
       </div>
@@ -32,9 +32,9 @@ function Navbar({ onSearch }) {
         />
       </div>
       <div className="logindiv">
-        <button><Link to='/'>LogIn</Link></button>
+        <button><Link id='Login' to='/loginPage'>LogIn</Link></button>
         <button>
-        <Link to='/Bag'>
+        <Link id='Bag' to='/Bag'>
           <svg
             stroke="currentColor"
             fill="currentColor"

@@ -58,6 +58,21 @@ color: white;
     margin-left: 10px;
     color: white;
 }
+#Login{
+    color: white;
+    text-decoration: none;
+}
+#Bag{
+    color: white;
+}
+#Blog{
+    color: white;
+    text-decoration: none;
+}
+#Menu{
+    color: white;
+    text-decoration: none;
+}
 .input{
  
     width:35%;
