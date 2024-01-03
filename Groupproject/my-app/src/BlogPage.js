@@ -36,26 +36,28 @@ useEffect(() => {
 }, []);
 return (
 <>
+
 <div className='inputArea'>
-<Navbar />
+
  <div className='inputField'>
-          <p> Comments </p>
-          <div className='inputbox'>
+ <h3> Comments </h3>
+         
             <input
               type='text'
-              style={{ width: '300px', height: '35px', fontSize: '20px', fontFamily: '-moz-initial' }}
+             
               value={inputValue}
               onChange={handleInputChange}
             />
-          </div>
-          <div className='btn'>
+         
+          
             <button id='submitbtn' onClick={handleButtonClick}>
               Submit
             </button>
-          </div>
+          
     </div>
-        <p id='firstcomment'>Your Comments:</p>
+        
           <div className='CommentItem'>
+          <p id='firstcomment'>Your Comments:</p>
             {comments.map((comment, index) => (
               <p key={index}>{comment}</p>
             ))}
@@ -114,27 +116,31 @@ const BlogPage = () => {
     return total;
   };
   return (
-    <div className="cart-page">
-      <div>
+
+   
+   <>
+    <Navbar />
+   <div id='Dhakkkan'>
+   <div id='cant'>
+    <div id='comment'>
         <Comment />
       </div>
-      <div className='TotalButton'>
-      <p>Total: {calculateTotal()} ₹</p>
+      <div className='Total'>
+      <h3>Total: {calculateTotal()} ₹</h3>
       </div>
-      <div className='title'>
-      <h2>Your Favourite</h2>
-      </div>
-      <div className='wholegetItem'>
+    </div>
+      
+      <div id='container'>
       {cartItems.map((item) => (
-        <div className='Allitem' key={item.id}>
-          <div className='image'>
+        <div className='Bag-data' key={item.id}>
+       
           <img src={item.image} alt="" />
-          </div>
+       
           <h3>{item.name}</h3>
           <h4>{item.price} ₹</h4>
-          <div className='description'>
+ 
           <p>{item.discription}</p>
-          </div>
+         
           <div className='buttons'>
             <div className='increament'>
             <button onClick={() => addToCart(item)}>+</button>
@@ -148,8 +154,15 @@ const BlogPage = () => {
         </div>
       ))}
       </div>
-      <Footer/>
-    </div>
+    
+   </div>
+   
+        
+  
+  
+    <Footer/>
+   </>
+  
   );
 };
 export default BlogPage;

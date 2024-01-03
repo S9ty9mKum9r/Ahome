@@ -3,7 +3,10 @@ import './LandingPage.css';
 import LogInPage from './LogInPage';
 import Rajistration from './Rajistration';
 import {  BrowserRouter as Router, Routes, Route, Link  } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 function Landing() {
+  const navigate = useNavigate();
+
   return (
       <Routes>
         <Route
@@ -33,32 +36,32 @@ function Landing() {
             just like you, to find your next great meal.
           </h2>
           <div className='dja'>
-            <button>
+            <button onClick={()=>navigate("/home")}>
               <div>Agra Restaurants</div>
               <p>&gt;</p>
             </button>
-            <button>
+            <button onClick={()=>navigate("/home")}>
               <div>Delhi Restaurants</div> <p>&gt;</p>
             </button>
-            <button>
+            <button onClick={()=>navigate("/home")}>
               <div>Delhi Restaurants</div> <p>&gt;</p>
             </button>
-            <button>
+            <button onClick={()=>navigate("/home")}>
               <div>Delhi Restaurants</div> <p>&gt;</p>
             </button>
-            <button>
+            <button onClick={()=>navigate("/home")}>
               <div>Delhi Restaurants</div> <p>&gt;</p>
             </button>
-            <button>
+            <button onClick={()=>navigate("/home")}>
               <div>Delhi Restaurants</div> <p>&gt;</p>
             </button>
-            <button>
+            <button onClick={()=>navigate("/home")}>
               <div>Delhi Restaurants</div> <p>&gt;</p>
             </button>
-            <button>
+            <button onClick={()=>navigate("/home")}>
               <div>Delhi Restaurants</div> <p>&gt;</p>
             </button>
-            <button>
+            <button onClick={()=>navigate("/home")}>
               <div>Delhi Restaurants</div> <p>&gt;</p>
             </button>
             {/* Add the rest of your buttons here */}

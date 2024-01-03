@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./CSSPages/Bag.css"
+import Navbar from './Navbar';
+import Footer from './Footer';
 const Bag = () => {
   const [cartItems, setCartItems] = useState([]);
 
@@ -50,24 +52,34 @@ const Bag = () => {
     return total;
   };
   return (
-    <div className="cart-page">
-      <p>Total: {calculateTotal()} ₹</p>
-      <h2>Your Cart</h2>
+   <>
+   <Navbar/>
+     <div className="cart-page">
+      <div id='Total'>
+      <h1>Total: {calculateTotal()} ₹</h1>
+      </div>
+      
       {cartItems.map((item) => (
-        <div key={item.id}>
+        <div id='Bag-data' key={item.id}>
           <img src={item.image} alt="" />
           <h3>{item.name}</h3>
           <h4>{item.price} ₹</h4>
           <p>{item.discription}</p>
           <div>
+          <div id='math'>
             <button onClick={() => addToCart(item)}>+</button>
             <span>{item.quantity}</span>
             <button onClick={() => removeFromCart(item)}>-</button>
+            </div>
+            <div id='remove'>
             <button onClick={() => removeItem(item)}>Remove</button>
+            </div>
           </div>
         </div>
       ))}
     </div>
+    <Footer/>
+   </>
   );
 };
 export default Bag;

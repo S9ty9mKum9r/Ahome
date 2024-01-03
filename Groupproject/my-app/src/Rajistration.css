@@ -1,18 +1,122 @@
-
-.cotainer{
-border: 2px solid red;
-width: 50vh;
-height: 60vh;
-background-color: white;
-margin-top: 18vh;
-margin-left: 35vw;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.hed{
+#Rajistration1container{
+    /* border: 2px solid  red; */
+    width: 40%;
+    height: 50vh;
+    margin-left: 28%;
+    background: #6D6027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #D3CBB8, #6D6027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D3CBB8, #6D6027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin-top: 10%;
+border-radius: 18px;
+}
+#Rajistration2head{
+    /* border: 2px solid  red; */
     display: flex;
     justify-content: space-between;
+
 }
-.hed>button{
-    cursor: pointer;
-    background-color: white;
+#Rajistration2head>p{
+    margin-left: 5vw;
+    font-size: 22px;
+}
+#Rajistration2head>button{
+    /* border: 2px solid red; */
+    margin-right: 10vw;
+
+}
+#Rajistration3inputone{
+    /* border: 2px solid red; */
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+}
+#Rajistration7inputonebtn{
+    /* border: 2px solid red; */
+margin-right: 5vw;
+width: 18vw;
+justify-content: space-between;
+}
+#Rajistration7inputonebtn>input{
+    font-size: 15px;
+    height: 4vh;
+    border-radius: 5px;
+    text-align: center;
     border: none;
+}
+#Rajistration7inputonebtn>button{
+    /* border: 2px solid red; */
+    margin-left: 2vw;
+}
+#Rajistration3inputone>p{
+    /* border: 2px solid red; */
+    margin-left: 3vw;
+}
+#Rajistration4inputonePassword{
+    /* border: 2px solid red; */
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+}
+#Rajistration8inputoneP{
+    /* border: 2px solid red; */
+    margin-right: 5vw;
+    width: 18vw;
+    justify-content: space-between;
+}
+#Rajistration8inputoneP>input{
+    font-size: 15px;
+    height: 4vh;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+}
+#Rajistration8inputoneP>button{
+    margin-left: 2vw;
+}
+#Rajistration4inputonePassword>p{
+    /* border: 2px solid red; */
+    margin-left: 3vw;
+}
+#Rajistration5singleInputtwo{
+    /* border: 2px solid red; */
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+}
+#Rajistration9singleInput{
+    /* border: 2px solid red; */
+    margin-right: 5vw;
+    width: 18vw;
+    justify-content: space-between;
+}
+#Rajistration9singleInput>input{
+    font-size: 15px;
+    height: 4vh;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+}
+#Rajistration9singleInput>button{
+    margin-left: 2vw;
+}
+#Rajistration5singleInputtwo>p{
+    /* border: 2px solid red; */
+    margin-left: 3vw;
+}
+#Rajistration6sbtn{
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 5vh;
+}
+#Rajistration6sbtn>button{
+    cursor: pointer;
+    font-size: 25px;
 }

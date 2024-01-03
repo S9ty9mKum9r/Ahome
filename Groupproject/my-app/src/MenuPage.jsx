@@ -47,10 +47,9 @@ function MenuPage() {
     }
   };
 
-  // Event handlers for button clicks
-  const Clicksix = () => {
-    setDisplayedData(sortdata);
-  };
+  // Event handlers for butto
+    // setDisplayedData(sortdata);
+  
 
   const ClickOne = () => {
     setDisplayedData(dataone);
@@ -74,8 +73,9 @@ function MenuPage() {
 
   // UseEffect hook to fetch data when the component mounts
   useEffect(() => {
+    setDisplayedData(sortdata);
     fetchdata();
-  }, []);
+  }, [sortdata]);
 
   // Function to handle adding items to the cart
   const handleAddToCart = (item) => {
@@ -141,17 +141,17 @@ function MenuPage() {
     } catch (error) {
       console.error("Error while handling addToCart:", error);
     }
-  };
+  };  
 
   // JSX rendering
   return (
-    <div className='dishpage'>
-    <Navbar/>
+    <>
+      <Navbar/>
+      <div className='dishpage'>
+  
       <div className='button'>
         {/* Buttons for sorting and filtering */}
-        <button className='firstButton' onClick={Clicksix}>
-          Sort by
-        </button>
+     
         <button id='firstButton' onClick={ClickFive}>
           All Element
         </button>
@@ -170,31 +170,31 @@ function MenuPage() {
       </div>
       <div className='allitemTwo'>
         {/* Displaying items based on the selected category */}
-        <ul className='listitem'>
+        
           {displayedData.map((item) => (
             <div className='allitem' key={item.id}>
-              <div className='image'>
-                {/* Display item image */}
+              
                 <img src={item.image} alt='' />
-              </div>
-              <div className='threeitem'>
-                {/* Display item price and name */}
-                <div className='price'>
-                  <p>
+                <h3>{item.name}</h3>
+                <h2>
                     {item.price}&nbsp;₹
-                  </p>
-                </div>
+                  </h2>
+                  <p>{item.discription}</p>
+              <div className='threeitem'>
+                
+               
+                  
+              
                 <div className='itemname'>
-                  <p>{item.name}</p>
+                
                 </div>
               </div>
               {/* Display item description */}
               <div className='description'>
-                <p>{item.discription}</p>
+                
               </div>
               <div className='buttonicon'>
                 <div className='Add'>
-                  {/* Button to add item to cart */}
                   <button id='Addbutton' onClick={() => handleAddToCart(item)}>
                     Add to Cart
                   </button>
@@ -221,10 +221,12 @@ function MenuPage() {
               </div>
             </div>
           ))}
-        </ul>
+       
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
+    <Footer/>
+    </>
   );
 }
 // Export the MenuPage component as the default export

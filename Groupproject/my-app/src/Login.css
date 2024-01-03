@@ -1,95 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Login.css */
+
+#logintext {
+  text-align: center;
+  color: black; /* Red text color */
+  margin-bottom: 20px;
 }
 
-.dja{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-.dcja{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#main{
-
-  
-  border: 2px solid green;
+#login {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
-#container{
-  border: 4px solid rgb(212, 189, 189);
-    width: 30%; 
-    height: 65vh;
-    margin: 0 auto; 
-    background-color:white; 
-    box-sizing: border-box; 
-    border-radius: 20px;
-  }
-  #top{
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
-    height: 15%;
-    justify-content: space-between;
-    font-family: monospace;
-    font-size: 17px;
-  }
-  .top button{
-    border: none;
-    background-color: white;
-  }
-  #mid{
-    border: 2px solid rgb(10, 19, 10);
-    width: 80%;
-    height:20%;
+#container1 {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176); /* Box shadow */
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
 
-align-items: flex-start;
-justify-content: space-evenly;
-padding-left: 3vw;
-  }
-  .mid input,.mid button{
-    height: 3vw;
-    width: 20vw;
-    border-radius: 10px;
-  }
-  #bottom{
-    border: 20px solid blueviolet;
-    height: 10%;
-    justify-content: flex-start;
-    padding-left: 3vw;
-    gap: 1vw;
-  }
-  #Contact{
-    width: 90%;
-    font-size: 17px;
-  }
-  #SendBtn{
-    width: 25vw;
-    font-size: 20px;
-    background-color: rgb(240, 38, 38);
-    color: white;
-    cursor: pointer;
-  }
-  #Gmailc{
-    width: 90%;
-    font-size: 17px;
-  }
-  #Submitbtn{
-    font-size: 20px;
-    border: none;
-    background-color: white;
-    color: red;
-    cursor: pointer;
-  }
-  #cross{
-    cursor: pointer;
-  }
-  #Account{
-    font-size: 20px;
-  }
- 
+#id,
+#loginid,
+#loginpass {
+  margin: 15px 0;
+  color: #555; /* Medium text color */
+}
+
+#loginid, #password1 {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 5px;
+  color: black;
+}
+
+#button,
+#createAccountButton {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#createAccountButton {
+  background-color: #e74c3c; /* Blue color for create account button */
+}
+
+#button:hover,
+#createAccountButton:hover {
+  background-color: #c0392b;
+}

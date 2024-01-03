@@ -1,81 +1,93 @@
-.cart-page{
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #e74c3c, #000000);
-    border: 4px solid red;
-    margin-top: 7%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    padding: auto;
-    gap: 10px;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    text-decoration: none;
+    color: white;
 }
-
-#container{
-    border: 2px solid rgb(33, 251, 33);
-    width: 45%;
-    margin: auto;
-    margin-bottom: 5%;
-   
-}
-#container> img{
+#Total{
+    /* border: 5px solid white; */
     width: 100%;
-   
-}
-h2{
-    text-align: center;
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   
-}
-h3{
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 15%;
 }
 h3{
     color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h4{
+    color: black;
 }
 p{
     color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-#bottom{
-    border: 2px solid yellow;
-    width: 98%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#quantity{
-    border: 2px solid blue;
-    height: 30px;
-    width: 40%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#quantity>button{
-    color: black;
-    background-color: aqua;
-    width: 20%;
-    height: 50%;
+#Bag-data>img{
+    width: 100%;
+    height: 190px;
+    border-radius: 50%;
     
 }
+.cart-page{
+   /* border: 4px solid green; */
+    width: 100%;
 
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-#remove{
-    border: 2px solid blue;
-    height: 30px;
-    width: 35%;
+  
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+
+}
+#Bag-data{
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    width:56%;
+    height: 400px;
+   border-radius: 40%;
+    margin: auto;
+    
+}
+#Bag-data>div{
+    /* border: 3px solid green; */
+    margin-top: 10%;
+    height: 10%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+#Bag-data>div>div{
+    /* border: 3px solid rgb(1, 10, 1); */
+    width: 30%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+#math>button{
+    width: 30%;
+    height: 90%;
+    font-size: larger;
+    background-color: black;
+    align-items: center;
+    border-radius: 10px;
+}
 #remove>button{
-    color: black;
-    background-color: aqua;
-    width: 90%;
-    height: 70%;
+    width: 70%;
+    height: 90%;
+    background-color: black;
+    border-radius: 10px;
 }

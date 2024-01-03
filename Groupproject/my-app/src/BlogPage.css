@@ -1,134 +1,152 @@
-body{
-   
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    text-decoration: none;
+
 }
-.Bodyitems{
-    margin-top: 22vh;
-    /* border: 2px solid red; */
-    background-color:white;
-    width: 35vw;
-    margin-left: 62vh;
-    border-radius: 15px;
+
+.inputArea{
+    /* border: 5px solid rgb(6, 6, 47); */
+    width: 100%;
+
+margin-top: 6%;
+height: auto;
+align-items: center;
+display: flex;
+
 }
-.inputField>p{
-    text-align: center;
-    font-size: 27px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.inputbox>input{
-    text-align: center;
-    margin-left: 15vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 12px;
-}
-#submitbtn{
-    width: 15vw;
-    height: 5vh;
-    border-radius: 12px;
-    background-color: brown;
-    font-size: 25px;
-    margin-left: 10vw;
-    color: white;
-    margin-top: 6vh;
-    cursor: pointer;
-    margin-left: 43vw;
-}
-#submitbtn:hover{
-    transform: scale(1.1);
-}
-#firstcomment{
-    text-align: center;
-    font-size: 27px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.inputField{
+/* border: 5px solid rgb(187, 14, 14); */
+height: 280px;
+width: 50%;
+position: relative;
+
+
 }
 .CommentItem{
-    text-align: center;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* border: 4px solid green; */
+    width: 50% ;
 }
-#favouriteItem{
-    text-align: center;
-    font-size: 27px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.inputField>input{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   margin-left: 30%;
+   margin-top: 5%;
+   width: 40%;
+   height: 60%;
+   color: black;
+   text-align: justify;
+   border: none;
+ 
+ 
+    }
+    .inputField>button{
+        /* border: 4px solid rgb(32, 60, 32); */
+        color: black;
+        background-color: brown;
+        width: 20%;
+        height: 20%;
+        margin-left: 3%;
+        border-radius: 10%;
+       
+         }
+#comment{
+    /* border: 4px solid rgb(25, 196, 25); */
+    width: 100%;
 }
-.myfavouriteItem{
+.Total{
+    /* border: 5px solid rgb(60, 10, 10); */
+
+    width: 100%;
+    height: 50px;
+    align-items: center;
     text-align: center;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
 }
-.myfavouriteItem{
-    /* border: 2px solid black; */
+h3{
+    color: black;
+}
+
+h4{
+    color: black;
+}
+p{
+    color: black;
+}
+.Bag-data>img{
+    /* border: 2px solid rgb(85, 161, 236); */
+    width: 80%;
+    margin-left: 10%;
+    height: 190px;
+    border-radius: 50%;
+}
+
+#container{
+    /* border: 4px solid rgb(243, 216, 61); */
+    height: 80%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-    margin: auto;
-}
-.wholedata{
-    /* border: 2px solid red; */
-}
-.image>img{
-    border: 2px solid yellow;
-    width: 25vw;
-    height: 35vh;
-    border-radius: 15px;
-}
-.inputArea{
-    /* border: 2px solid red; */
-    display: grid;
-}
-.inputbox>input{
-border: 2px solid yellow;
-margin-left: 40vw;
-}
-.btn>button{
-    border: 2px solid yellow;
-    /* margin-right: 42vw; */
-}
-.wholegetItem{
-/* border: 2px solid red; */
-display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-    margin: auto;
-}
-.Allitem{
-/* border: 2px solid red; */
-text-align: center;
-width: 70vh;
-}
-.description{
-    /* border: 2px solid red; */
-    width: 22vw;
-    margin-left: 5vw;
-}
-.buttons{
-    /* border: 2px solid red; */
-    width: 24vw;
-    height: 5vh;
-    display: flex;
-    margin-left: 4vw;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    gap: 5%;
     
 }
-.title{
-    /* border: 2px solid red; */
-    width: 22vw;
-    margin-left: 44vw;
+.Bag-data{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width:56%;
+  
+  
+    margin: auto;
+    /* border: 3px solid rgb(1, 20, 1);  */
+    height: 
+    400px;
 }
-.TotalButton{
-    /* border: 2px solid red; */
-    width: 22vw;
-    margin-left: 10vw;
+.Bag-data>div {
+    /* border: 3px solid rgb(1, 20, 1); */
+    margin-top: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.increament{
-    /* border: 2px solid red;  */
-    width: 5vw;
-    /* margin-left: 1vw; */
-    justify-content: space-between;
+.Bag-data>div>div{
+    /* border: 3px solid rgb(1, 10, 1); */
+    width: 30%;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.Removebtn{
-    /* border: 2px solid red; */
-    margin-left: 15vw;
+
+#cant{
+    /* border: 4px solid blue; */
+    height: 100%;
 }
-.image{
-    /* border: 2px solid red; */
+
+.increament>span{
+    color: black;
+}
+.increament>button{
+    width: 30%;
+    height: 90%;
+    font-size: larger;
+    color: black;
+    
+    background-color: rgb(222, 187, 187);
+    align-items: center;
+    border-radius: 10px;
+}
+.Removebtn>button{
+    width: 70%;
+    height: 90%;
+    color: black;
+    background-color: rgb(222, 187, 187);
+    border-radius: 10px;
+}
+#Dhakkkan{
+    margin-bottom: 20%;
+ /* display: none; */
 }

@@ -7,7 +7,7 @@ import Footer from "./Footer"
 function Homepage(){
     return (
    <>
-         <div><Navbar/></div>
+         
          <MyComponent/>
          <div><Footer/></div>
          
